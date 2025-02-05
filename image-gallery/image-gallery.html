@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cyan-50">
+    <div class="bg-white mx-16 my-8 grid auto-rows-auto md:flex md:flex-col md:p-32 p-4 justify-center rounded-3xl shadow-2xl">
+        <div class="grid grid-rows-4 md:flex md:place-self-end md:text-xl md:gap-6 md:font-light text-center gap-4 font-semibold ">
+            <a class="cursor-pointer hover:underline decoration-4 underline-offset-8 decoration-black">Vector</a>  
+            <a class="cursor-pointer hover:underline decoration-4 underline-offset-8 decoration-black">Illustrations</a>
+            <a class="cursor-pointer hover:underline decoration-4 underline-offset-8 decoration-black">Images</a>
+            <a class="cursor-pointer hover:underline decoration-4 underline-offset-8 decoration-black">Icons</a>
+        </div>
+        <div class="flex flex-col md:justify-between md:flex-row md:mt-10 gap-3">
+            <form class="grid grid-cols-[85%_15%] md:w-1/3 border-b-2 border-gray-300">
+                <input type="text" placeholder="Search">
+                    <button type="search"><img src="/Image-gallery/search.png" class="pb-1 justify-self-center"></button>
+                </input>
+            </form>
+            <button class="bg-black text-white p-2 md:px-6 rounded-lg hover:bg-white border-2 transition-all duration-700 border-black hover:text-black">Upload</button>
+        </div>
+        <div class="grid auto-rows-auto md:grid-rows-none 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2  md:mt-16 gap-6 mt-6">
+            <div class="relative w-full">
+                <img src="/Image-gallery/image1.jpg" class="z-0">
+                <div class="absolute grid grid-cols-6 gap-3 bottom-0 justify-stretch bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <div class="p-2 col-span-5">
+                        <p class="z-10 text-lg text-white">Abstract painting</p>
+                        <p class="text-white">25k Likes • 300 Shares</p>
+                    </div>
+                        <button><img src="/Image-gallery/save.png" class="self-center"></button>
+                </div>
+            </div>
+            <div class="relative w-full">
+                <img src="/Image-gallery/image2.jpg" class="z-0">
+                <div class="absolute grid grid-cols-6 gap-3 bottom-0 justify-stretch bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <div class="p-2 col-span-5">
+                        <p class="z-10 text-lg text-white">Window painting</p>
+                        <p class="text-white">15k Likes • 340 Shares</p>
+                    </div>
+                        <button><img src="/Image-gallery/save.png" class="self-center"></button>
+                </div>
+            </div>
+            <div class="relative w-full">
+                <img src="/Image-gallery/image3.jpg" class="z-0">
+                <div class="absolute grid grid-cols-6 gap-3 bottom-0 justify-stretch bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <div class="p-2 col-span-5">
+                        <p class="z-10 text-lg text-white">Roof painting</p>
+                        <p class="text-white">45k Likes • 643 Shares</p>
+                    </div>
+                        <button><img src="/Image-gallery/save.png" class="self-center"></button>
+                </div>
+            </div>
+            <div class="relative w-full">
+                <img src="/Image-gallery/image4.jpg" class="z-0">
+                <div class="absolute grid grid-cols-6 gap-3 bottom-0 justify-stretch bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <div class="p-2 col-span-5">
+                        <p class="z-10 text-lg text-white">? painting</p>
+                        <p class="text-white">56k Likes • 850 Shares</p>
+                    </div>
+                        <button><img src="/Image-gallery/save.png" class="self-center"></button>
+                </div>
+            </div>
+            <div class="relative w-full">
+                <img src="/Image-gallery/image5.jpg" class="z-0">
+                <div class="absolute grid grid-cols-6 gap-3 bottom-0 justify-stretch bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <div class="p-2 col-span-5">
+                        <p class="z-10 text-lg text-white">City painting</p>
+                        <p class="text-white">32k Likes • 735 Shares</p>
+                    </div>
+                        <button><img src="/Image-gallery/save.png" class="self-center"></button>
+                </div>
+            </div>
+            <div class="relative w-full">
+                <img src="/Image-gallery/image6.jpg" class="z-0">
+                <div class="absolute grid grid-cols-6 gap-3 bottom-0 justify-stretch bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <div class="p-2 col-span-5">
+                        <p class="z-10 text-lg text-white">Gate painting</p>
+                        <p class="text-white">42k Likes • 890 Shares</p>
+                    </div>
+                        <button><img src="/Image-gallery/save.png" class="self-center"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
