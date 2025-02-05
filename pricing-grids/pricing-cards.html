@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing grids</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="style.css">
+</head>
+<body class="bg-slate-900 flex flex-col md:flex-row gap-12 my-40 items-center justify-center">
+    <div class="flex-col border-8 h-full rounded-xl border-gray-600 mx-10 hover:border-violet-600">
+        <div class="bg-slate-900 p-8 text-center flex flex-col gap-3 justify-center w-full rounded-t-sm">
+            <h1 class="text-white text-3xl">BASIC</h1>
+            <p class="text-6xl font-extrabold text-white mt-8" style="font-family: 'Cormorant Garamond', serif;">100GB</p>
+            <p class="text-2xl text-white">&#36;1.99/Month</p>
+            <button class="p-3 w-3/4 self-center border-2 mt-4 mb-10 rounded-lg border-violet-500 text-white hover:bg-violet-600">Purchase</button>
+        </div>
+        <div class="bg-slate-900 flex flex-col border-t-2 border-gray-600 text-center h-full pb-12 pt-10 py-6 px-5 rounded-b-sm gap-3">
+            <p class="text-xl text-white">&#10003; 100GB of storage</p>
+            <p class="text-xl font-slabo text-white">&#10003; Option to add members</p>
+            <p class="text-xl text-white">&#10003; Extra member benefits</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center border-8 h-full rounded-xl border-gray-600 mx-10 hover:border-violet-600">
+        <div class="bg-slate-900 p-8 text-center flex flex-col gap-3 justify-center rounded-t-sm">
+            <h1 class="text-white text-3xl">STANDARD</h1>
+            <p class="text-6xl text-white mt-8 font-extrabold" style="font-family: 'Cormorant Garamond', serif;">200GB</p>
+            <p class="text-2xl text-white">&#36;3.99/Month</p>
+            <button class="p-3 w-3/4 self-center border-2 mt-4 mb-10 rounded-lg border-violet-500 text-white hover:bg-violet-600">Purchase</button>
+        </div>
+        <div class="bg-slate-900  flex flex-col border-t-2 border-gray-600 text-center pb-12 pt-10 px-5 rounded-b-sm gap-3">
+            <p class="text-xl text-white">&#10003; 200GB of storage</p>
+            <p class="text-xl font-slabo text-white">&#10003; Option to add members</p>
+            <p class="text-xl text-white">&#10003; Extra member benefits</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center h-full border-8 rounded-xl border-gray-600 mx-10 hover:border-violet-600">
+        <div class="bg-slate-900 w-full p-8 text-center flex flex-col gap-3 justify-center rounded-t-sm">
+            <h1 class="text-white text-3xl">PREMIUM</h1>
+            <p class="text-6xl text-white font-extrabold mt-8 md:hidden" style="font-family: 'Cormorant Garamond', serif;">2 TB</p>
+            <p class="text-2xl text-white md:hidden">&#36;8.99/Month</p>
+            <p class="text-6xl text-white font-extrabold mt-8" style="font-family: 'Cormorant Garamond', serif;">2 TB</p>
+            <p class="text-2xl text-white">&#36;8.99/Month</p>
+            <button class="p-3 w-3/4 self-center border-2 mt-4 mb-10 rounded-lg border-violet-500 text-white hover:bg-violet-600">Purchase</button>
+        </div>
+        <div class="bg-slate-900 flex flex-col border-t-2 border-gray-600 text-center content-center pb-12 pt-10 px-5 rounded-b-sm gap-3">
+            <p class="text-xl text-white">&#10003; 2 TB of storage</p>
+            <p class="text-xl font-slabo text-white">&#10003; Option to add members</p>
+            <p class="text-xl text-white">&#10003; Extra member benefits</p>
+        </div>
+    </div>
+
+</body>
+</html>
