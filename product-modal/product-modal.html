@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 h-screen md:grid md:items-center md:place-content-center">
+    <div class="px-4 py-10 md:grid grid-cols-[45%_55%]">
+        <div class="bg-white p-6 md:p-12 object-contain rounded-t-2xl md:rounded-t-none">
+            <img src="/Product-modal/headphone.png" class="hover:scale-110 md:h-1/2"></img>
+        </div>
+        <div class="grid auto-rows-auto gap-6 justify-center md:justify-items-start text-center bg-white p-6 rounded-b-2xl md:rounded-b-none">
+            <p class="bg-black text-white rounded-3xl w-1/2 md:w-1/3 p-1 place-self-center md:place-self-start">Free shipping</p>
+            <h1 class="text-xl font-bold md:w-3/4 md:text-start ">Razer Kraken Kitty Edt Gaming Headser Quartz</h1>
+            <s class="text-xl">&#36;799</s>
+            <price class="text-6xl font-extrabold">&#36;599</price>
+            <h2 class="text-xs md:text-lg text-gray-500 font-thin">This offer is valid until April 3rd or as long as stock lasts!</h2>
+            <button class="bg-blue-500 md:w-full md:m-0 text-white rounded-xl p-6 m-4 transition-transform border-b-8 border-blue-800 hover:-translate-y-1 hover:border-blue-500 duration:1000">
+                <span class="w-full text-2xl inline-block transition-transform duration-200 transform hover:translate-y-3">Add to cart</span>
+            </button>
+            <button id="cart-button" class="relative w-1/2 ml-6 md:text-start">
+                <span id="green-dot" class="absolute -left-3 md:-left-5 top-1 w-4 h-4 rounded-full bg-green-500 transition-all duration-700"></span>
+                +50 pcs. in stock
+            </button>
+            <div class="flex flex-col gap-4 md:grid md:grid-cols-2">
+            <button class="text-2xl md:text-lg flex justify-center gap-3 rounded-xl p-4 w-full border-2 border-gray-300 hover:-translate-y-3 hover:shadow-lg">
+                <img src="/Product-modal/scale.png"> 
+                <p>Add to cart</p>
+            </button>
+            <button class="text-2xl md:text-lg flex justify-center gap-3 rounded-xl p-4 w-full border-2 border-gray-300 hover:-translate-y-3 hover:shadow-lg">
+                <img src="/Product-modal/heart.png"> 
+                <p>Add to wishlist</p>
+            </button>
+            </div>
+        </div>
+    </div>
+      
+      
+
+    <script>
+        document.getElementById("cart-button").addEventListener("click", function() {
+          const dot = document.getElementById("green-dot");
+          dot.classList.add("scale-[2]", "opacity-0");
+          setTimeout(() => {dot.classList.remove("scale-[2]", "opacity-0");}, 1000);
+        });
+    </script>
+
+</body>
+</html>
